@@ -11,13 +11,19 @@ namespace SchoolPractice  //make sure its the same damn namespace
 
             Student dan = new Student("Dan", 1, 1, 4.0);
 
+
+
             Console.WriteLine($"The student class works... {dan.Name} is a student");
+            dan.AddGrade(5, 3.5);
+            dan.AddGrade(45, 2.0);
+            Console.WriteLine(dan.StudentInfo());
 
 
-
-
-
-
+            //Console.WriteLine(dan.NumberOfCredits);
+            //Console.WriteLine(dan.Gpa);
+            
+           // Console.WriteLine(dan.GetGradeLevel());
+            Console.WriteLine(dan.ToString());
 
 
 
